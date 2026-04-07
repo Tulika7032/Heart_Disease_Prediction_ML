@@ -3,13 +3,11 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline 
 from sklearn.preprocessing import StandardScaler
 import joblib
-import numpy as np
 
 def train_model(X_train, y_train):
-    np.random.seed(42)
     pipelines = {
-        "random_forest": Pipeline([("scalar", StandardScaler()), ("model",RandomForestClassifier(n_estimators=100))]),
-        "logistic_regression": Pipeline([("scalar", StandardScaler()), ("model", LogisticRegression())])
+        "random_forest": Pipeline([("scalar", StandardScaler()), ("model",RandomForestClassifier(n_estimators=100, random_state=42))]),
+        "logistic_regression": Pipeline([("scalar", StandardScaler()), ("model", LogisticRegression(max_iter=1000, random_state=42))])
     }
     trained_models = {}
 

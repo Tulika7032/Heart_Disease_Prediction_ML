@@ -51,8 +51,8 @@ CardioScan demonstrates the complete **ML lifecycle**:
 
 ### 2. Model Training
 **- Pipeline:**
-  - StandardScaler + RandomForest
-  - StandardScaler + LogisticRegression
+  - **StandardScaler + RandomForest**
+  - **StandardScaler + LogisticRegression**
 
 ### 3. Model Evaluation
 **- Metrics:**

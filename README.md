@@ -62,11 +62,18 @@ CardioScan demonstrates the complete **ML lifecycle**:
   - **F1 Score**
   - **ROC-AUC**
 
-### 4. Model Selection
+### 4. Model Performance
+
+| Model                  | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|------------------------|----------|----------|--------|----------|--------|
+| Random Forest          | 83.6%    | 0.84     | 0.84   | 0.84     | 0.92   |
+| Logistic Regression    | 85.2%    | 0.87     | 0.84   | 0.86     | 0.93   |
+
+### 5. Model Selection
 - Best model selected using **F1-score**
 - **Saved as `model.pkl`**
 
-### 5. Prediction
+### 6. Prediction
 - **Load saved model**
 - **Predict on new input data**
 
@@ -77,8 +84,8 @@ CardioScan demonstrates the complete **ML lifecycle**:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Heart_Disease_Prediction_ML.git
-cd cardioscan
+git clone https://github.com/your-username/heart-disease-project.git
+cd heart-disease-project
 ```
 
 ### 2. Create a Virtual Enviornment
